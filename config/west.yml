@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: george-norton
+      url-base: https://github.com/george-norton
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: petejohanson
@@ -11,6 +13,9 @@ manifest:
       remote: petejohanson
       revision: feat/pointers-move-scroll
       import: app/west.yml
+    - name: zmk-driver-pmw3360
+      remote: george-norton
+      revision: main
     # replace the one above with the commented one below when it gets merged into zmk
     # must swap the zmk-fingerpunch-keyboards repo as well at the same time
     # - name: zmk
